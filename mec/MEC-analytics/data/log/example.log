@@ -1,0 +1,95 @@
+INFO:werkzeug: * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-881-101
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:36:16] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:36:31] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:39:14] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:40:11] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-881-101
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:44:45] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-881-101
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:47:16] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:48:11] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-881-101
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:48:51] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-881-101
+INFO:werkzeug:127.0.0.1 - - [25/May/2018 12:53:55] "POST /get/analytics/localhost HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/karthik/MEC/git/metrics/mec/MEC-analytics/api/analytics/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-881-101
+INFO:root:Frame captured : : 2018-05-25 12:56:28.089494
+INFO:root:Face Detected  : : 2018-05-25 12:56:28.574682 : : Raghuram
+INFO:root:Frame captured : : 2018-05-25 12:56:29.224551
+INFO:root:Face Detected  : : 2018-05-25 12:56:29.939674 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:30.679008
+INFO:root:Face Detected  : : 2018-05-25 12:56:31.282318 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:31.889714
+INFO:root:Face Detected  : : 2018-05-25 12:56:32.488543 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:33.096498
+INFO:root:Face Detected  : : 2018-05-25 12:56:33.695145 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:34.274147
+INFO:root:Face Detected  : : 2018-05-25 12:56:34.841296 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:35.430881
+INFO:root:Face Detected  : : 2018-05-25 12:56:36.008596 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:36.595414
+INFO:root:Face Detected  : : 2018-05-25 12:56:37.164355 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:37.750052
+INFO:root:Face Detected  : : 2018-05-25 12:56:38.343375 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:38.948021
+INFO:root:Face Detected  : : 2018-05-25 12:56:39.532061 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:40.080031
+INFO:root:Face Detected  : : 2018-05-25 12:56:40.549388 : : Raghuram
+INFO:root:Frame captured : : 2018-05-25 12:56:44.077877
+INFO:root:Face Detected  : : 2018-05-25 12:56:44.585887 : : Raghuram
+INFO:root:Frame captured : : 2018-05-25 12:56:45.188494
+INFO:root:Face Detected  : : 2018-05-25 12:56:45.718570 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:46.314014
+INFO:root:Face Detected  : : 2018-05-25 12:56:46.816451 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:47.390873
+INFO:root:Face Detected  : : 2018-05-25 12:56:47.903305 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:48.472075
+INFO:root:Face Detected  : : 2018-05-25 12:56:48.977824 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:49.577835
+INFO:root:Face Detected  : : 2018-05-25 12:56:50.114226 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:50.706261
+INFO:root:Face Detected  : : 2018-05-25 12:56:51.233185 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:51.838949
+INFO:root:Face Detected  : : 2018-05-25 12:56:52.481850 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:53.096366
+INFO:root:Face Detected  : : 2018-05-25 12:56:53.626777 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:54.244266
+INFO:root:Face Detected  : : 2018-05-25 12:56:54.779593 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:55.382556
+INFO:root:Face Detected  : : 2018-05-25 12:56:55.939679 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:56.550541
+INFO:root:Face Detected  : : 2018-05-25 12:56:57.159136 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:57.800966
+INFO:root:Face Detected  : : 2018-05-25 12:56:58.444377 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:56:59.045787
+INFO:root:Face Detected  : : 2018-05-25 12:56:59.717344 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:57:00.327949
+INFO:root:Face Detected  : : 2018-05-25 12:57:00.935984 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:57:01.563530
+INFO:root:Face Detected  : : 2018-05-25 12:57:02.182448 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:57:02.809781
+INFO:root:Face Detected  : : 2018-05-25 12:57:03.543867 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:57:04.186927
+INFO:root:Face Detected  : : 2018-05-25 12:57:04.815009 : : Karthik
+INFO:root:Frame captured : : 2018-05-25 12:57:05.416235
+INFO:root:Face Detected  : : 2018-05-25 12:57:06.032123 : : Karthik
