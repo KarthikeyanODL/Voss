@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Karaf :: Examples :: REST :: Client :: Java HTTP
+
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - javax.ws.rs-api (http://jax-rs-spec.java.net) javax.ws.rs:javax.ws.rs-api:bundle:2.1
+    License: CDDL 1.1  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)    License: GPL2 w/ CPE  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Karaf :: Examples :: REST :: API (https://www.apache.org/karaf/apache-karaf-examples/karaf-rest-example/karaf-rest-example-api/) org.apache.karaf.examples:karaf-rest-example-api:bundle:4.2.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

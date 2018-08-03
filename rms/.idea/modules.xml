@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rms-aggregator.iml" filepath="$PROJECT_DIR$/rms-aggregator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/rms-api.iml" filepath="$PROJECT_DIR$/api/rms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/artifacts/rms-artifacts.iml" filepath="$PROJECT_DIR$/artifacts/rms-artifacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cli/rms-cli.iml" filepath="$PROJECT_DIR$/cli/rms-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/rms-features.iml" filepath="$PROJECT_DIR$/features/rms-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/impl/rms-impl.iml" filepath="$PROJECT_DIR$/impl/rms-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it/rms-it.iml" filepath="$PROJECT_DIR$/it/rms-it.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf/rms-karaf.iml" filepath="$PROJECT_DIR$/karaf/rms-karaf.iml" />
+    </modules>
+  </component>
+</project>

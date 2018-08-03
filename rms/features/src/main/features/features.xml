@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vi: set et smarttab sw=4 tabstop=4: -->
+<!--
+Copyright © 2017 verizon and others. All rights reserved.
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License v1.0 which accompanies this distribution,
+and is available at http://www.eclipse.org/legal/epl-v10.html
+-->
+<features name="odl-rms-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0">
+  <repository>mvn:org.opendaylight.yangtools/features-yangtools/{{VERSION}}/xml/features</repository>
+  <repository>mvn:org.opendaylight.controller/features-mdsal/{{VERSION}}/xml/features</repository>
+  <repository>mvn:org.opendaylight.mdsal.model/features-mdsal-model/{{VERSION}}/xml/features</repository>
+  <repository>mvn:org.opendaylight.netconf/features-restconf/{{VERSION}}/xml/features</repository>
+  <repository>mvn:org.opendaylight.dluxapps/features-dluxapps/{{VERSION}}/xml/features</repository>
+  <repository>mvn:org.apache.cxf.karaf/apache-cxf/{{VERSION}}/xml/features</repository>
+
+  <feature name='odl-rms-api' version='${project.version}' description='OpenDaylight :: rms :: api'>
+    <feature version='${mdsal.model.version}'>odl-mdsal-models</feature>
+    <bundle>mvn:com.vz/rms-api/{{VERSION}}</bundle>
+  </feature>
+  <feature name='odl-rms' version='${project.version}' description='OpenDaylight :: rms'>
+    <feature version='${mdsal.version}'>odl-mdsal-broker</feature>
+    <feature version='${project.version}'>odl-rms-api</feature>
+    <bundle>mvn:com.vz/rms-impl/{{VERSION}}</bundle>
+  </feature>
+  <feature name='odl-rms-rest' version='${project.version}' description='OpenDaylight :: rms :: REST'>
+    <feature version="${project.version}">odl-rms</feature>
+    <feature version="${restconf.version}">odl-restconf</feature>
+  </feature>
+  <feature name='odl-rms-ui' version='${project.version}' description='OpenDaylight :: rms :: UI'>
+    <feature version="${project.version}">odl-rms-rest</feature>
+    <feature version="${restconf.version}">odl-mdsal-apidocs</feature>
+    <feature version="${dluxapps.version}">odl-dluxapps-yangman</feature>
+  </feature>
+  <feature name='odl-rms-cli' version='${project.version}' description='OpenDaylight :: rms :: CLI'>
+    <feature version="${project.version}">odl-rms</feature>
+    <bundle>mvn:com.vz/rms-cli/{{VERSION}}</bundle>
+  </feature>
+
+
+    <feature name="odl-custom-rest" version="${project.version}">
+
+        <feature>http</feature>
+        <!--<requirement>osgi.service;effective:=active;filter:=(objectClass=org.osgi.service.http.HttpService)</requirement>-->
+        <!--<feature>aries-blueprint</feature>-->
+
+
+
+        <bundle>wrap:mvn:javax.ws.rs/javax.ws.rs-api/2.1</bundle>
+        <feature version="${cxf.version}">cxf-jaxrs</feature>
+        <bundle dependency="true">wrap:mvn:org.osgi/org.osgi.service.http/1.2.1</bundle>
+        <bundle dependency="true">wrap:mvn:org.apache.aries.blueprint/org.apache.aries.blueprint/1.1.0</bundle>
+        <bundle dependency="true">wrap:mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version}</bundle>
+        <bundle dependency="true">wrap:mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version}</bundle>
+        <bundle dependency="true">wrap:mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version}</bundle>
+        <bundle dependency="true">wrap:mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson.version}</bundle>
+        <bundle dependency="true">wrap:mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/${jackson.version}</bundle>
+        <bundle>mvn:com.vz/rms-impl/{{VERSION}}</bundle>
+    </feature>
+
+
+</features>

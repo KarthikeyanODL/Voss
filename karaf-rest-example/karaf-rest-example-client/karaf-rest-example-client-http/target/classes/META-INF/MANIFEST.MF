@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_144
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: The Apache Software Foundation provides support for 
+ the Apache community of open-source software projects.    The Apache pr
+ ojects are characterized by a collaborative, consensus based developmen
+ t process, an open and    pragmatic software license, and a desire to c
+ reate high quality software that leads the way in its field.    We cons
+ ider ourselves not simply a group of projects sharing a server, but rat
+ her a community of developers    and users.
+Bundle-DocURL: http://karaf.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Karaf :: Examples :: REST :: Client :: Java HTTP
+Bundle-SymbolicName: org.apache.karaf.examples.karaf-rest-example-client
+ -http
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 4.2.1.SNAPSHOT
+Export-Package: org.apache.karaf.examples.rest.client.http;version="4.2.
+ 1"
+Import-Package: org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"

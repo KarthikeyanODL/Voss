@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.mdsal.model:iana-if-type-2014-05-08:2014.05.08.10-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/iana-if-type-2014-05-08/2014.05.08.10-Carbon/iana-if-type-2014-05-08-2014.05.08.10-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/iana-if-type-2014-05-08/2014.05.08.10-Carbon/iana-if-type-2014-05-08-2014.05.08.10-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/iana-if-type-2014-05-08/2014.05.08.10-Carbon/iana-if-type-2014-05-08-2014.05.08.10-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

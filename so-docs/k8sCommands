@@ -1,0 +1,23 @@
+ssh root@10.75.4.44
+ko get pods | grep so
+ko exec -it dev-so-85d5cf48c5-f27j8 -- bash
+
+
+after receiving WorkflowMessage with VNFAResponse_CORRELATOR
+
+after receiving sdncAdapterCallbackRequest with SDNCA_requestId
+org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request
+
+
+reloadMsoProperties||||ERROR|PermissionError||MSO-GENERAL-5412E Missing or invalid properties file: /etc/mso/config.d/cadi.properties
+java.io.FileNotFoundException
+MsoJavaProperties.java:149
+
+MSO.DeleteVfModuleInfra
+
+
+MSO.SDNCA|BPMNClient|BPMN|MSO.SDNCA|ERROR|UnknownError|Caught ConnectorRequestException running Process[6369ace1-90aa-11e8-929c-02202d521919:636c6c84-90aa-11e8-929c-02202d521919] after receiving WorkflowMessage with VNFAResponse_CORRELATOR = '40e5fd30-072a-4166-b4b3-b0509cdd9e25-1532592212150': 
+org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request|MSO-BPEL-9101E Exception encountered
+
+MSO.DELVfModI
+

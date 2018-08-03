@@ -1,0 +1,86 @@
+
+
+http://localhost:8080/vid/login_external
+
+ docker pull mariadb:10
+ docker login -u docker -p docker nexus3.onap.org:10001
+ docker pull nexus3.onap.org:10001/onap/vid:1.2.1
+
+
+docker run --name vid-mariadb -e MYSQL_DATABASE=vid_openecomp_epsdk -e MYSQL_USER=vidadmin -e MYSQL_PASSWORD=root -e MYSQL_ROOT_PASSWORD=root -v /home/karthik/onap-dev/vid/lf_config/vid-my.cnf:/etc/mysql/my.cnf -v /home/karthik/onap-dev/vid/lf_config/vid-pre-init.sql:/docker-entrypoint-initdb.d/vid-pre-init.sql -v /var/lib/mysql -d mariadb:10
+
+
+
+docker run -e VID_MYSQL_DBNAME=vid_openecomp_epsdk -e VID_MYSQL_PASS=root --name vid-server -p 8080:8080 --link vid-mariadb:vid-mariadb-docker-instance -d nexus3.onap.org:10001/onap/vid:1.2.1
+
+
+
+Error : java.lang.SecurityException: accessing Unauthorized url : localhost
+
+
+GLOBAL_VID_USERNAME = "demo"
+GLOBAL_VID_PASSWORD = "Kp8bJ4SXszM0WX"
+GLOBAL_VID_HEALTH_USERNAME = "Default"
+GLOBAL_VID_HEALTH_PASSWORD = "AppPassword!1"
+
+
+/mso_create_vfmodule_instance/{serviceInstanceId}/vnfs/{vnfInstanceId}
+
+
+http://localhost:8080/vid/serviceModels.htm#/instances/subscribers
+
+
+{
+   "requestDetails":{
+      "requestInfo":{
+         "instanceName":"vLB",
+         "source":"VID",
+         "suppressRollback":false,
+         "requestorId":"demo"
+      },
+      "modelInfo":{
+         "modelType":"vfModule",
+         "modelInvariantId":"39dd3f4b-5ef3-4331-b8d1-b3a9f8393d4e",
+         "modelVersionId":"e8ae8cd8-a0eb-4b4d-abab-e10504679c57",
+         "modelName":"VlbVsp..base_vlb..module-0",
+         "modelVersion":"6",
+         "modelCustomizationId":"5aa23938-a9fe-11e7-8b4b-0242ac120002",
+         "modelCustomizationName":"VlbVsp..base_vlb..module-0"
+      },
+      "requestParameters":{
+         "usePreload":true
+      },
+      "cloudConfiguration":{
+         "lcpCloudRegionId":"regionOne",
+         "tenantId":"0f9d3a9766ac4309b14253337aefe2e8"
+      },
+      "relatedInstanceList":[
+         {
+            "relatedInstance":{
+               "instanceId":"30c2cc0e-1b3b-4938-9e57-3bdc26762f98",
+               "modelInfo":{
+                  "modelType":"service",
+                  "modelName":"vLBSvc",
+                  "modelInvariantId":"722704b8-7879-43d1-ac4b-4db038f53745",
+                  "modelVersion":"6.0",
+                  "modelVersionId":"ba208930-9804-4408-9d57-6532470ce208"
+               }
+            }
+         },
+         {
+            "relatedInstance":{
+               "instanceId":"307edee6-aa8e-4a46-b4bf-d6dec1b48e86",
+               "modelInfo":{
+                  "modelType":"vnf",
+                  "modelName":"vLB_VSP",
+                  "modelInvariantId":"f2b3649c-c5a7-4287-ace4-4814fbda98bb",
+                  "modelVersion":"6.0",
+                  "modelVersionId":"fe52c95e-2ce9-408d-9e3e-c9543c114e0e",
+                  "modelCustomizationId":"5aa23938-a9fe-11e7-8b4b-0242ac120002",
+                  "modelCustomizationName":"vLB_VSP 0"
+               }
+            }
+         }
+      ]
+   }
+}

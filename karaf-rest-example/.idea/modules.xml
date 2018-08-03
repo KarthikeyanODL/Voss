@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example.iml" filepath="$PROJECT_DIR$/karaf-rest-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example-api/karaf-rest-example-api.iml" filepath="$PROJECT_DIR$/karaf-rest-example-api/karaf-rest-example-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client.iml" filepath="$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client-cxf/karaf-rest-example-client-cxf.iml" filepath="$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client-cxf/karaf-rest-example-client-cxf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client-http/karaf-rest-example-client-http.iml" filepath="$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client-http/karaf-rest-example-client-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example-features/karaf-rest-example-features.iml" filepath="$PROJECT_DIR$/karaf-rest-example-features/karaf-rest-example-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karaf-rest-example-provider/karaf-rest-example-provider.iml" filepath="$PROJECT_DIR$/karaf-rest-example-provider/karaf-rest-example-provider.iml" />
+    </modules>
+  </component>
+</project>

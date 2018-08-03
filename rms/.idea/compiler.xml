@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rms-api" />
+        <module name="rms-cli" />
+        <module name="rms-features" />
+        <module name="rms-impl" />
+        <module name="rms-it" />
+        <module name="rms-karaf" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rms-aggregator" target="1.8" />
+      <module name="rms-api" target="1.8" />
+      <module name="rms-artifacts" target="1.5" />
+      <module name="rms-cli" target="1.8" />
+      <module name="rms-features" target="1.8" />
+      <module name="rms-impl" target="1.8" />
+      <module name="rms-it" target="1.8" />
+      <module name="rms-karaf" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

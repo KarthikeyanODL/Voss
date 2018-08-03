@@ -1,0 +1,46 @@
+
+
+SO commands
+
+
+
+
+
+
+mvn clean install -DskipTests -P docker -Dcheckstyle.skip
+
+sudo /etc/init.d/haproxy stop  : To avoid address already 
+Dir :  ~/onap-dev/so/docker-config
+MTU=1500 docker-compose up mariadb
+MTU=1500 docker-compose up mso
+
+docker cp MSOInfrastructureBPMN-1.2.0-SNAPSHOT.war 0a93a891ca77:/opt/jboss/standalone/deployments
+
+
+http://192.168.10.88:8080/camunda/app/cockpit/default/#/dashboard
+
+Kp8bJ4SXszM0WXlhak3eHlcse2gAw84vaoGGmJvUy2U
+
+
+Task_09a7ivd
+
+/process-definition/key/aProcessDefinitionKey/start
+
+
+http://192.168.10.88:8080/camunda/api/engine/engine/default/process-definition/count
+http://192.168.10.88:8080/camunda/api/engine/engine/default/process-definition/key/Process_dcae/start
+http://192.168.10.88:8080/camunda/api/engine/engine/default/task?assignee=admin&processInstanceId=4412417f-5838-11e8-9045-0242ac120003
+
+
+
+
+
+POST engine-rest/process-definition/key/aProcessDefinitionKey/start
+http://192.168.10.88:8080/camunda/api/engine/process-definition/key/Process_dcae/start
+
+
+#{execution.getVariable("SDNCREST_sdncAdapterStatusCode") == '200' || execution.getVariable("SDNCREST_sdncAdapterStatusCode") == '202'}
+
+
+/opt/jboss/bin# ./standalone.sh --debug 8000 -c standalone-full-ha-mso.xml
+

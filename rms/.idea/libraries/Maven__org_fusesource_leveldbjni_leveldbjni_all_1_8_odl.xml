@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.fusesource.leveldbjni:leveldbjni-all:1.8-odl">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/fusesource/leveldbjni/leveldbjni-all/1.8-odl/leveldbjni-all-1.8-odl.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/fusesource/leveldbjni/leveldbjni-all/1.8-odl/leveldbjni-all-1.8-odl-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/fusesource/leveldbjni/leveldbjni-all/1.8-odl/leveldbjni-all-1.8-odl-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

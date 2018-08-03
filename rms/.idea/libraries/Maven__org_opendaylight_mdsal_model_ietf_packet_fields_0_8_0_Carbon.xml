@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.mdsal.model:ietf-packet-fields:0.8.0-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/ietf-packet-fields/0.8.0-Carbon/ietf-packet-fields-0.8.0-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/ietf-packet-fields/0.8.0-Carbon/ietf-packet-fields-0.8.0-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/ietf-packet-fields/0.8.0-Carbon/ietf-packet-fields-0.8.0-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

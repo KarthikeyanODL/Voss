@@ -1,0 +1,90 @@
+
+SO curl request to create VFModules:
+====================================
+curl -X POST -u "InfraPortalClient:password1$"  -H 'X-FromAppId: Postman'  -H 'X-TransactionId: get_request_status' -H "Content-Type:application/json" -d @mso_payload.json -H "Accept: application/json"   http://10.75.4.44:30223/ecomp/mso/infra/serviceInstances/v6/7a71685b-70d3-452b-866e-5575d95d8490/vnfs/377265e9-d72a-41a1-8540-ef027f663034/vfModules | python -m json.tool
+
+
+Payload details: @mso_payload.json
+=============== 
+{"requestDetails":{"requestInfo":{"instanceName":"Vfmodule_vLB1113","source":"VID","suppressRollback":false,"requestorId":"demo"},"modelInfo":{"modelType":"vfModule","modelInvariantId":"95c5ef1b-f05c-4da0-b547-4fc614f8a0ab","modelVersionId":"f48c3f1c-4831-4708-a7c6-e578f42996be","modelName":"VlbDemo..base_vlb..module-0","modelVersion":"1","modelCustomizationId":"997ebe6c-f6b5-47fa-9535-fdd9109c932b","modelCustomizationName":"VlbDemo..base_vlb..module-0"},"requestParameters":{"usePreload":true},"cloudConfiguration":{"lcpCloudRegionId":"regionOne","tenantId":"4609a42fe5234ff2ab47e28a36c78d1c"},"relatedInstanceList":[{"relatedInstance":{"instanceId":"7a71685b-70d3-452b-866e-5575d95d8490","modelInfo":{"modelType":"service","modelName":"vLB","modelInvariantId":"d85c5f55-7e8d-4d21-a574-46f46549f178","modelVersion":"2.0","modelVersionId":"5946366b-ebb9-4bbf-a817-e79f5ab835ce"}}},{"relatedInstance":{"instanceId":"377265e9-d72a-41a1-8540-ef027f663034","modelInfo":{"modelType":"vnf","modelName":"vlB_demo","modelInvariantId":"08e4c770-80f1-4e66-b940-f4629c110ac1","modelVersion":"1.0","modelVersionId":"bad81f2e-8574-4271-ab63-618e5089e590","modelCustomizationId":"ef925c94-229c-4007-a76e-ab82363b1198","modelCustomizationName":"vlB_demo 0"}}}]}}
+
+
+
+SO curl Delete VF modules :  <replace vfmodules id detaild from db>
+==================
+curl -X DELETE -u "InfraPortalClient:password1$"  -H 'X-FromAppId: Postman'  -H 'X-TransactionId: get_request_status' -H "Content-Type:application/json" -d @mso_payload.json -H "Accept: application/json"   http://10.75.4.44:30223/ecomp/mso/infra/serviceInstances/v6/7a71685b-70d3-452b-866e-5575d95d8490/vnfs/377265e9-d72a-41a1-8540-ef027f663034/vfModules/34594852-a281-4a7a-9043-fd127dcedfd7
+
+
+GET vf module details from AAI :
+==============================
+curl -k --user AAI:AAI -X  GET  -H "Accept: application/json" -H "Content-Type: application/json" -H "X-TransactionId: robot-ete-1234" -H "X-FromAppId: robot-ete"  https://10.75.4.44:30233/aai/v11//network/generic-vnfs/generic-vnf/377265e9-d72a-41a1-8540-ef027f663034/vf-modules | python -m json.tool
+
+
+<get resource-version and get vf-modules from the above GET request and do the delete below request>
+DELETE vf module in AAI:
+=======================
+curl -k --user AAI:AAI -X  DELETE  -H "Accept: application/json" -H "Content-Type: application/json" -H "X-TransactionId: robot-ete-1234" -H "X-FromAppId: robot-ete"  https://10.75.4.44:30233/aai/v11//network/generic-vnfs/generic-vnf/377265e9-d72a-41a1-8540-ef027f663034/vf-modules/vf-module/d8ea5fa9-e77a-4bc8-93a7-ba0bdd629aef?resource-version=1532674401687 | python -m json.tool
+
+
+DataBase
+============
+
+DB - use mso_requests;
+table : infra_active_requests
+
+select * from infra_active_requests\G
+Delete :  truncate table infra_active_requests
+
+
+CAMUNDA
+=======
+http://10.75.4.44:30223/camunda/app/cockpit/default/#/dashboard
+admin: Kp8bJ4SXszM0WXlhak3eHlcse2gAw84vaoGGmJvUy2U
+
+
+
+Openstack:
+=========
+http://10.75.6.131/dashboard/project/stacks/
+
+admin
+j6UnMCUnuJCUsB4hx8XmXrj3e
+
+
+
+Log files:
+==========
+#cd /var/log/onap/MSO
+To empty the log files
+cat /dev/null | tee ASDCController/* ApiHandlerInfra/* BPMN/* NetworkAdapter/* RequestDB/* SDNCAdapter/* TenantAdapter/* VnfAdapter/* WorkflowMessageAdapter/* vfcadapter/*
+#cd /opt/jboss/standalone/log
+
+
+STATUS_MESSAGE: Received error from SDN-C: No preload data found to match vnf-name
+
+Enable Debug link:
+==================
+http://10.75.4.44:30223/mso/logging/debug
+
+
+Exception while closing command context: HTCL-02007 Unable to execute HTTP request
+org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request 
+
+Caught ConnectorRequestException running Process[c5e5c313-918f-11e8-929c-02202d521919:c621e136-918f-11e8-929c-02202d521919] after receiving sdncAdapterCallbackRequest with SDNCA_requestId = '488734f2-66bc-4766-841b-05d4dd4b7251-1532690732124': org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request
+
+BPMN/errordev-so-85d5cf48c5-f27j8.log:17:2018-07-30T07:45:11.199Z|5d1bcea6-54f9-43b0-9d3c-fb65bfd9685d|default task-275|MSO.SDNCA|BPMNClient|BPMN|MSO.SDNCA|ERROR|UnknownError|Caught ConnectorRequestException running Process[72f54c9f-93cc-11e8-929c-02202d521919:72f83252-93cc-11e8-929c-02202d521919] after receiving WorkflowMessage with VNFAResponse_CORRELATOR = '5d1bcea6-54f9-43b0-9d3c-fb65bfd9685d-1532936694608': org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request|MSO-BPEL-9101E Exception encountered
+BPMN/errordev-so-85d5cf48c5-f27j8.log:18:2018-07-30T07:45:11.200Z|5d1bcea6-54f9-43b0-9d3c-fb65bfd9685d|default task-275|MSO.SDNCA|BPMNClient|BPMN|MSO.SDNCA|ERROR|UnknownError|Caught ConnectorRequestException running Process[72f54c9f-93cc-11e8-929c-02202d521919:72f83252-93cc-11e8-929c-02202d521919] after receiving WorkflowMessage with VNFAResponse_CORRELATOR = '5d1bcea6-54f9-43b0-9d3c-fb65bfd9685d-1532936694608': org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request|MSO-BPEL-9100E Exception: org.camunda.connect.ConnectorRequestException: HTCL-02007 Unable to execute HTTP request - 	at org.camunda.connect.httpclient.impl.HttpConnectorLogger.unableToExecuteRequest(HttpConnectorLogger.java:48) - 	at org.camunda.connect.httpclient.impl.AbstractHttpConnector.execute(AbstractHttpConnector.java:72) - 	at org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl.execute(SoapHttpConnectorImpl.java:48) - 	at org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl.execute(SoapHttpConnectorImpl.java:23) - 	at org.camunda.connect.impl.AbstractConnectorRequest.execute(AbstractConnectorRequest.java:42) - 	at org.camunda.connect.plugin.impl.ServiceTaskConnectorActivityBehavior$1.call(ServiceTaskConnectorActivityBehavior.java:57) - 	at org.camunda.connect.plugin.impl.ServiceTaskConnectorActivityBehavior$1.call(ServiceTaskConnectorActivityBehavior.java:51) - 	at org.camunda.bpm.engine.impl.bpmn.behavior.AbstractBpmnActivityBehavior.executeWithErrorPropagation(AbstractBpmnActivityBehavior.java:108) - 	at org.camunda.connect.plugin.impl.ServiceTaskConnectorActivityBehavior.execute(ServiceTaskConnectorActivityBehavior.java:51) - 	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:57) - 	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:46) - 	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueIfExecutionDoesNotAffectNextOperation(PvmExecutionImpl.java:1958) - 	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:38) - 	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:27) - 	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91) - 	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125) - 	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104) - 	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79) - 	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618) - 	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594) - at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1897) - 	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1894) - 	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964) - 	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913) - 	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1894) - 	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:57) - 	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:27) - 	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:65) - 	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91) - 	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125) - 	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104) - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:iana-afn-safi:2013.07.04.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:iana-if-type-2014-05-08:2014.05.08.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-inet-types:2010.09.24.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-interfaces:2014.05.08.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-yang-types:2010.09.24.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-yang-types-20130715:2013.07.15.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-restconf:2013.10.19.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:yang-ext:2013.09.07.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:opendaylight-l2-types:2013.08.27.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-ted:2013.10.21.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-topology:2013.10.21.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-topology-isis:2013.10.21.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-topology-ospf:2013.10.21.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-topology-l3-unicast-igp:2013.10.21.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-network-2015-06-08:1.4.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-inet-types-2013-07-15:1.4.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-type-util:2.0.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-packet-fields:0.10.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-access-control-list:0.10.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal.model:ietf-lisp-address-types-2015-11-05:1.1.3-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="rest-api" />
+    <orderEntry type="library" name="Maven: org.opendaylight.mdsal:yang-binding:0.12.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.yangtools:concepts:2.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.yangtools:util:2.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.yangtools:triemap:1.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.opendaylight.yangtools:yang-common:2.0.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.opendaylight.odlparent:karaf.branding:3.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.opendaylight.odlparent:features-test:3.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam-container-karaf:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam-container-remote:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam-container-rbc-client:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam-container-rbc:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.swissbox:pax-swissbox-core:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.swissbox:pax-swissbox-lifecycle:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-compress:1.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.tukaani:xz:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.swissbox:pax-swissbox-framework:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.swissbox:pax-swissbox-tracker:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-exec:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-io:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-monitors:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-spi:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.felix:org.apache.felix.configadmin:1.8.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam-junit4:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam-spi:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.tinybundles:tinybundles:2.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-lang:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.exam:pax-exam:4.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-store:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-util-property:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.url:pax-url-aether:2.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.url:pax-url-aether-support:2.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.aether:aether-impl:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.aether:aether-api:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.aether:aether-spi:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.aether:aether-util:1.0.2.v20150114" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.karaf.deployer:org.apache.karaf.deployer.blueprint:4.1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.karaf.deployer:org.apache.karaf.deployer.features:4.1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.karaf.features:org.apache.karaf.features.core:4.1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.url:pax-url-wrap:2.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.base:ops4j-base-net:1.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.swissbox:pax-swissbox-bnd:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: biz.aQute.bnd:bndlib:2.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.url:pax-url-commons:2.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.ops4j.pax.swissbox:pax-swissbox-property:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:5.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.opendaylight.odlparent:karaf-util:3.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-http:2.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-http-shared:2.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jsoup:jsoup:1.7.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpclient:4.3.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-provider-api:2.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.plexus:plexus-utils:3.0.15" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:23.6-jre" level="project" />
+    <orderEntry type="library" name="Maven: org.checkerframework:checker-compat-qual:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.1.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.opendaylight.odlparent:bundles-test-lib:3.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.awaitility:awaitility:3.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.karaf.bundle:org.apache.karaf.bundle.core:4.1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-simple:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.findbugs:annotations:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.jdt:org.eclipse.jdt.annotation:2.1.0" level="project" />
+  </component>
+</module>

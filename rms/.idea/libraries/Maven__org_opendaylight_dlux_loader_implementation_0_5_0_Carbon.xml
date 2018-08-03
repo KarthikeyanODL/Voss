@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.dlux:loader.implementation:0.5.0-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/dlux/loader.implementation/0.5.0-Carbon/loader.implementation-0.5.0-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/dlux/loader.implementation/0.5.0-Carbon/loader.implementation-0.5.0-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/dlux/loader.implementation/0.5.0-Carbon/loader.implementation-0.5.0-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

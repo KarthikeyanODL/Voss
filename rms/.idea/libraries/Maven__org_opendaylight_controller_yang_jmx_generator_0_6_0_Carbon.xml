@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.controller:yang-jmx-generator:0.6.0-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/controller/yang-jmx-generator/0.6.0-Carbon/yang-jmx-generator-0.6.0-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/controller/yang-jmx-generator/0.6.0-Carbon/yang-jmx-generator-0.6.0-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/controller/yang-jmx-generator/0.6.0-Carbon/yang-jmx-generator-0.6.0-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

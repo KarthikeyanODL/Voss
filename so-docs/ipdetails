@@ -1,0 +1,61 @@
+
+96.239.249.8 -> VPN 
+10.75.14.63 -> Jump Host
+10.75.4.11 -> OOM
+
+
+username: innovlab
+password: sdnnfv@123
+
+
+<Manual install scripts : https://nexus.onap.org/content/sites/raw/org.onap.demo/boot/1.1.1/>
+
+
+http://sdc.api.simpledemo.onap.org:8181/sdc1/kibanaProxy/
+http://portal.api.simpledemo.onap.org:8989/ONAPPORTAL/applicationsHome
+http://10.75.6.131/dashboard/project/networks/
+https://96.239.249.8/vdesk/hangup.php3?hangup_error=12290
+
+
+
+
+d1553bc7007fbe45af0a65907addb84048798b61fec5a7bef1114f822f3db2cd
+
+
+
+
+ONAP VIM:  https://dashboard-tpa-r2.vici.verizon.com
+SVC-VDSI
+uQ12aA9uQ12aA9uQ12aA9uQ1uQuQ1
+
+Managed-VIM: http://10.75.6.131
+admin
+j6UnMCUnuJCUsB4hx8XmXrj3e
+
+
+
+
+
+IP: 192.168.10.42
+http://10.75.4.11:8880/env/1a46/kubernetes/kubectl -> Rancher
+
+
+
+
+http://onap.readthedocs.io/en/amsterdam/guides/onap-developer/settingup/fullonap.html
+HEAT file and env
+https://git.onap.org/demo/plain/heat/ONAP/onap_openstack.yaml?h=amsterdam
+https://git.onap.org/demo/plain/heat/ONAP/onap_openstack.env?h=amsterdam
+https://wiki.onap.org/display/DW/ONAP+Services+List#ONAPServicesList-ONAPServices
+http://onap.readthedocs.io/en/amsterdam/submodules/dcaegen2.git/docs/sections/installation_heat.html
+http://www.debug-all.com/?p=100
+https://www.openstack.org/assets/presentation-media/IPv6-Deployment-OpenStack.pdf
+
+
+
+
+
+https://aivdsi.slack.com
+
+
+camunda :  admin/Kp8bJ4SXszM0WXlhak3eHlcse2gAw84vaoGGmJvUy2U

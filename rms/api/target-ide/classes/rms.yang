@@ -1,0 +1,187 @@
+module rms {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:rms";
+    prefix "rms";
+    description "";
+
+    revision "2015-01-05" {
+        description "Initial revision of rms model";
+    }
+ 	
+    
+    container fb {
+        list v1 {
+            description "";
+            key fb_name;
+            leaf fb_name {
+                mandatory "true";
+                description "";
+                type string;
+            }
+            list bridge {
+                description "";
+                key br_name;
+                leaf br_name {
+                    description "";
+                    type string;
+                }
+                leaf name {
+                    description "";
+                    type string;
+                }
+                leaf xuuid {
+                    description "";
+                    type string;
+                }
+                leaf datapath_type {
+                    description "";
+                    type string;
+                }
+                leaf datapath_id {
+                    description "";
+                    type string;
+                }
+                leaf disable-in-band {
+                    description "";
+                    type string;
+                }
+                leaf-list controllers {
+                    description "";
+                    type string;
+                }
+                leaf protocols {
+                    description "";
+                    type string;
+                }
+                leaf fail_mode {
+                    description "";
+                    type string;
+                }
+                container other_config {
+                    leaf floatingPointNumber {
+                        description "";
+                        type boolean;
+                    }
+                    leaf int {
+                        description "";
+                        type boolean;
+                    }
+                    leaf valueNode {
+                        description "";
+                        type boolean;
+                    }
+                    leaf containerNode {
+                        description "";
+                        type boolean;
+                    }
+                    leaf missingNode {
+                        description "";
+                        type boolean;
+                    }
+                    leaf object {
+                        description "";
+                        type boolean;
+                    }
+                    leaf pojo {
+                        description "";
+                        type boolean;
+                    }
+                    leaf number {
+                        description "";
+                        type boolean;
+                    }
+                    leaf integralNumber {
+                        description "";
+                        type boolean;
+                    }
+                    leaf short {
+                        description "";
+                        type boolean;
+                    }
+                    leaf long {
+                        description "";
+                        type boolean;
+                    }
+                    leaf float {
+                        description "";
+                        type boolean;
+                    }
+                    leaf double {
+                        description "";
+                        type string;
+                    }
+                    leaf bigDecimal {
+                        description "";
+                        type boolean;
+                    }
+                    leaf bigInteger {
+                        description "";
+                        type boolean;
+                    }
+                    leaf textual {
+                        description "";
+                        type boolean;
+                    }
+                    leaf boolean {
+                        description "";
+                        type boolean;
+                    }
+                    leaf-list nodeType {
+                        description "";
+                        type boolean;
+                    }
+                    leaf array {
+                        description "";
+                        type boolean;
+                    }
+                    leaf null {
+                        description "";
+                        type boolean;
+                    }
+                    description "";
+                }
+                leaf lldp_enable {
+                    description "";
+                    type boolean;
+                }
+                leaf lldp-msg-tx-hold {
+                    description "";
+                    type string;
+                }
+                leaf lldp-msg-tx-interval {
+                    description "";
+                    type string;
+                }
+                leaf lldp-reinit-delay {
+                    description "";
+                    type string;
+                }
+                leaf lldp-tx-delay {
+                    description "";
+                    type string;
+                }
+                leaf-list _uuid1 {
+                    description "";
+                    type string;
+                }
+            }
+        }
+        description "";
+    }
+    rpc hello {
+        description "";
+        input {
+            leaf in {
+                description "";
+                type string;
+            }
+        }
+
+        output {
+            leaf out {
+                description "";
+                type string;
+            }
+        }
+    }
+}

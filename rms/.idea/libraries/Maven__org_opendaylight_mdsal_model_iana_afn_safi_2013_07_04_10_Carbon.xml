@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.mdsal.model:iana-afn-safi:2013.07.04.10-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/iana-afn-safi/2013.07.04.10-Carbon/iana-afn-safi-2013.07.04.10-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/iana-afn-safi/2013.07.04.10-Carbon/iana-afn-safi-2013.07.04.10-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/iana-afn-safi/2013.07.04.10-Carbon/iana-afn-safi-2013.07.04.10-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vi: set et smarttab sw=4 tabstop=4: -->
+<!--
+Copyright © 2017 Vz and others. All rights reserved.
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License v1.0 which accompanies this distribution,
+and is available at http://www.eclipse.org/legal/epl-v10.html
+-->
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:odl="http://opendaylight.org/xmlns/blueprint/v1.0.0"
+           odl:use-default-for-reference-types="true"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:jaxrs="http://cxf.apache.org/blueprint/jaxrs"
+           xmlns:cxf="http://cxf.apache.org/blueprint/core"
+           xsi:schemaLocation="
+  http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+  http://cxf.apache.org/blueprint/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd
+  http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd
+  ">
+
+  <reference id="dataBroker"
+             interface="org.opendaylight.controller.md.sal.binding.api.DataBroker"
+             odl:type="default" />
+
+  <reference id="rpcRegistry"
+             interface="org.opendaylight.controller.sal.binding.api.RpcProviderRegistry"/>
+
+  <reference id="providerContext"
+             interface="org.opendaylight.controller.sal.binding.api.BindingAwareBroker"/>
+
+
+
+  <bean id="provider"
+    class="org.opendaylight.rest.impl.RestProvider"
+    init-method="init" destroy-method="close">
+    <argument ref="dataBroker" />
+    <argument ref="rpcRegistry" />
+  </bean>
+  <bean id="impl"
+        class="org.opendaylight.rest.impl.RestImpl"
+        init-method="init" destroy-method="close">
+    <argument ref="dataBroker" />
+  </bean>
+
+  <cxf:bus>
+    <cxf:features>
+      <cxf:logging/>
+    </cxf:features>
+  </cxf:bus>
+
+  <jaxrs:server id="bookingRest" address="/example">
+    <jaxrs:serviceBeans>
+      <ref component-id="bookingBean" />
+    </jaxrs:serviceBeans>
+    <jaxrs:providers>
+      <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+    </jaxrs:providers>
+  </jaxrs:server>
+
+  <bean id="bookingBean" class="org.opendaylight.rest.impl.Rest"/>
+
+
+
+</blueprint>

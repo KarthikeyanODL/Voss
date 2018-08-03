@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.netconf:sal-rest-connector:1.5.0-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/netconf/sal-rest-connector/1.5.0-Carbon/sal-rest-connector-1.5.0-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/netconf/sal-rest-connector/1.5.0-Carbon/sal-rest-connector-1.5.0-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/netconf/sal-rest-connector/1.5.0-Carbon/sal-rest-connector-1.5.0-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

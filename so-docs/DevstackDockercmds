@@ -1,0 +1,56 @@
+Docker commands
+
+vim Dockerfile
+===================================
+FROM ubuntu:latest
+
+RUN apt-get update -y 
+
+RUN apt-get install -y python-pip python-dev build-essential
+
+COPY . /app
+
+WORKDIR /app
+
+ENV PYTHONPATH=/app
+
+RUN pip install -r requirements.txt
+
+EXPOSE 5000
+
+ENTRYPOINT ["python", "app.py"]
+
+===================================
+docker build -t plugnplay_be1:latest .
+docker images
+docker run -d -p 1235:1234 5a984d953dfc (Image ID)
+docker exec -it 5ddf948b4c40491e883e7796806aee3e7f42010782ee57456e8a67dc199c3e6c bash
+
+docker ps -a
+docker start d576d71c0925
+docker logs -f d576d71c0925
+docker exec -it d83d428f7571 bash
+
+docker cp d83d428f7571:/app/requirements.txt requirements.txt
+
+
+OpenStack commands:
+
+openstack server list
+heat stack-list
+heat stack-show portcheck
+
+heat stack-create -f dns.yaml  dns
+nova usage-list
+
+~/devstack
+. openrc admin admin
+source openrc demo demo
+
+heat stack-delete portcheck
+
+glance image-create --name ubuntu --file trusty-server-cloudimg-amd64-disk1\ \(1\).img --container-format bare --disk-format raw
+openstack security group rule list
+
+openstack security group rule create --protocol udp --ingress default
+

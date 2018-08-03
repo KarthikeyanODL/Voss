@@ -1,0 +1,113 @@
+
+
+<button data-tests-id="confirmButton" ngx-enabled="true" att-button="" size="small" ng-click="confirm();" class="button button--small button--primary" btn-type="primary">Confirm</button>
+
+Referer: http://vid.api.simpledemo.onap.org:8080/vid/serviceModels.htm
+
+To SO :
+/serviceInstances/v6/<service_instance_id>/vnfs/<vnf_instance_id>/vfModules
+
+/{version:[vV][4-6]}/{serviceInstanceId}/vnfs/{vnfInstanceId}/vfModules
+
+To VID :
+/mso_create_vfmodule_instance/{serviceInstanceId}/vnfs/{vnfInstanceId}
+
+
+
+Reqst URL :
+http://vid.api.simpledemo.onap.org:8080/vid/mso/mso_create_vfmodule_instance/30c2cc0e-1b3b-4938-9e57-3bdc26762f98/vnfs/307edee6-aa8e-4a46-b4bf-d6dec1b48e86
+
+{
+   "requestDetails":{
+      "requestInfo":{
+         "instanceName":"vLB",
+         "source":"VID",
+         "suppressRollback":false,
+         "requestorId":"demo"
+      },
+      "modelInfo":{
+         "modelType":"vfModule",
+         "modelInvariantId":"39dd3f4b-5ef3-4331-b8d1-b3a9f8393d4e",
+         "modelVersionId":"e8ae8cd8-a0eb-4b4d-abab-e10504679c57",
+         "modelName":"VlbVsp..base_vlb..module-0",
+         "modelVersion":"6",
+         "modelCustomizationId":"5aa23938-a9fe-11e7-8b4b-0242ac120002",
+         "modelCustomizationName":"VlbVsp..base_vlb..module-0"
+      },
+      "requestParameters":{
+         "usePreload":true
+      },
+      "cloudConfiguration":{
+         "lcpCloudRegionId":"regionOne",
+         "tenantId":"0f9d3a9766ac4309b14253337aefe2e8"
+      },
+      "relatedInstanceList":[
+         {
+            "relatedInstance":{
+               "instanceId":"30c2cc0e-1b3b-4938-9e57-3bdc26762f98",
+               "modelInfo":{
+                  "modelType":"service",
+                  "modelName":"vLBSvc",
+                  "modelInvariantId":"722704b8-7879-43d1-ac4b-4db038f53745",
+                  "modelVersion":"6.0",
+                  "modelVersionId":"ba208930-9804-4408-9d57-6532470ce208"
+               }
+            }
+         },
+         {
+            "relatedInstance":{
+               "instanceId":"307edee6-aa8e-4a46-b4bf-d6dec1b48e86",
+               "modelInfo":{
+                  "modelType":"vnf",
+                  "modelName":"vLB_VSP",
+                  "modelInvariantId":"f2b3649c-c5a7-4287-ace4-4814fbda98bb",
+                  "modelVersion":"6.0",
+                  "modelVersionId":"fe52c95e-2ce9-408d-9e3e-c9543c114e0e",
+                  "modelCustomizationId":"5aa23938-a9fe-11e7-8b4b-0242ac120002",
+                  "modelCustomizationName":"vLB_VSP 0"
+               }
+            }
+         }
+      ]
+   }
+}
+
+
+
+API history for service instance
+
+http://{{mso_ip}}:8080/ecomp/mso/infra/orchestrationRequests/v2/?filter=serviceInstanceId%3AEQUALS%3Ac54316d8-464e-4967-bece-8c2b2f458b66
+
+
+VF- Module:
+-----------
+
+/serviceInstances/v6/<service_instance_id>/vnfs/<vnf_instance_id>/vfModules 
+http://localhost:8080/ecomp/mso/infra/serviceInstances/v6/30c2cc0e-1b3b-4938-9e57-3bdc26762f98/vnfs/307edee6-aa8e-4a46-b4bf-d6dec1b48e86/vfModules
+
+auth: InfraPortalClient:password1$ or Basic SW5mcmFQb3J0YWxDbGllbnQ6cGFzc3dvcmQxJA==
+
+E2Einstance 
+http://localhost:8080/ecomp/mso/infra/e2eServiceInstances/v3
+
+
+
+
+
+/mso/async/services/CreateVfModuleInfra -> DB receipe
+
+
+
+///////////////////////////
+
+"VnfType vLBSvc/vLB_VSP 0 and VF Module Model Name VlbVsp..base_vlb..module-0 with version 6.0 not found in MSO Catalog DB"
+
+
+recipeLookupResult = /mso/async/services/CreateVfModuleInfra
+
+
+
+
+
+java -Xdebug -Xrunjdwp:transport=dt_socket,address=8998,server=y DebugTest
+

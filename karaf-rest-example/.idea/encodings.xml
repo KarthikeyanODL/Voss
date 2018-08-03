@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karaf-rest-example-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karaf-rest-example-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client-cxf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karaf-rest-example-client/karaf-rest-example-client-http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karaf-rest-example-features" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/karaf-rest-example-provider" charset="UTF-8" />
+  </component>
+</project>

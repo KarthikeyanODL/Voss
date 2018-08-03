@@ -1,0 +1,4 @@
+
+I added the workflow in so/bpmn/MSOInfrastructure/process folder, and the execution listener to the groovy folder in MSOInfrastructure. Then I recompiled the whole docker container by following the steps described on  http://onap.readthedocs.io/en/latest/submodules/so.git/docs/Building_SO.html, and followed on the next topic which describes the docker containers' deployment procedure. I see 88 different WF on the cockpit, as should you (87 are ONAP's built in BPMN, the last one beeing my own). 
+
+The rest end point gets exposed on its own. After logging on the cockpit if you try send a GET request on http://localhost:8080/camunda/api/engine/engine/default/process-definition/ you should get the list of WF deployed on your engine. 

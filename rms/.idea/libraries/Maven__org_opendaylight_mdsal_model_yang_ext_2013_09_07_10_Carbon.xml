@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opendaylight.mdsal.model:yang-ext:2013.09.07.10-Carbon">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/yang-ext/2013.09.07.10-Carbon/yang-ext-2013.09.07.10-Carbon.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/yang-ext/2013.09.07.10-Carbon/yang-ext-2013.09.07.10-Carbon-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opendaylight/mdsal/model/yang-ext/2013.09.07.10-Carbon/yang-ext-2013.09.07.10-Carbon-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
